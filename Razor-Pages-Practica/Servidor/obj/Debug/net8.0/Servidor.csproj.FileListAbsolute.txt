@@ -119,3 +119,4 @@ C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Se
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\obj\Debug\net8.0\Servidor.pdb
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\obj\Debug\net8.0\Servidor.genruntimeconfig.cache
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\obj\Debug\net8.0\ref\Servidor.dll
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\AutoMapper.dll

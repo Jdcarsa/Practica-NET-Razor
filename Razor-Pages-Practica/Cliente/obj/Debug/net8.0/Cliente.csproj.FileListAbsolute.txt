@@ -1048,3 +1048,8 @@ C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Cl
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Cliente\obj\Debug\net8.0\refint\Cliente.dll
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Cliente\obj\Debug\net8.0\Cliente.pdb
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Cliente\obj\Debug\net8.0\ref\Cliente.dll
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Cliente\bin\Debug\net8.0\wwwroot\_framework\AutoMapper.wasm
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Cliente\bin\Debug\net8.0\wwwroot\_framework\AutoMapper.wasm.gz
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Cliente\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Cliente\obj\Debug\net8.0\webcil\AutoMapper.wasm
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Cliente\obj\Debug\net8.0\compressed\dcax7qi5dv.gz

@@ -13,8 +13,8 @@ namespace ServerLibrary.Data
         public DbSet<Department> Departments { get; set; }
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Town> Towns { get; set; }
-
-        // References
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<SystemRole> SystemRoles { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
     }
 }
