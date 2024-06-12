@@ -19,6 +19,16 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(connecti
 
 builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
 builder.Services.AddScoped<IUserAccount , UserAccountRepository>();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowBlazorwasm",
+        builder => builder
+            .WithOrigins("http://localhost:5288", "https://localhost:7218")
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials());
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,7 +39,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("AllowBlazorWasm");
 app.UseAuthorization();
 
 app.MapControllers();

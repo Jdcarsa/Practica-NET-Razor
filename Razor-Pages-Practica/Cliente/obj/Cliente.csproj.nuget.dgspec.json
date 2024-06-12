@@ -93,7 +93,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\BaseLibrary\\BaseLibrary.csproj": {
+                "projectPath": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\BaseLibrary\\BaseLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -110,6 +114,24 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.6.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -178,6 +200,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -186,6 +216,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
