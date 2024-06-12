@@ -11,9 +11,10 @@
 
 @using BaseLibrary.DTOs
 @using ClienteLibreria.Helpers
-@using ClienteLibreria.Services.Contracts
 @using Microsoft.AspNetCore.Components.Authorization
+@using ClienteLibreria.Services.Contracts
 
-@inject CustomAuthenticationStateProvider AuthStateProvider
+
+@inject AuthenticationStateProvider AuthStateProvider
 @inject IUserAccountService accountService
 @inject NavigationManager NavManager

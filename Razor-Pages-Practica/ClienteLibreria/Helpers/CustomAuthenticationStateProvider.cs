@@ -9,7 +9,7 @@ namespace ClienteLibreria.Helpers
 {
     public class CustomAuthenticationStateProvider(LocalStorageService localStorageService) : AuthenticationStateProvider
     {
-        private readonly ClaimsPrincipal anonymous = new ClaimsPrincipal(new ClaimsIdentity());
+        private readonly ClaimsPrincipal anonymous = new (new ClaimsIdentity());
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {
             var stringToken = await localStorageService.GetToken();
@@ -32,7 +32,7 @@ namespace ClienteLibreria.Helpers
             {
                 var serializeSession = Serializations.SerializeObj(userSession);
                 await localStorageService.SetToken(serializeSession);
-                var getUserClaims = DecryptToken(userSession.Token);
+                var getUserClaims = DecryptToken(userSession.Token!);
                 claimsPrincipal = SetClaimsPrincipal(getUserClaims);
             }
             else
@@ -50,10 +50,10 @@ namespace ClienteLibreria.Helpers
             return new ClaimsPrincipal(new ClaimsIdentity(
                 new List<Claim>
                 {
-            new Claim(ClaimTypes.NameIdentifier, claims.Id),
-            new Claim(ClaimTypes.Name, claims.Name),
-            new Claim(ClaimTypes.Email, claims.Email),
-            new Claim(ClaimTypes.Role, claims.Role)
+            new Claim(ClaimTypes.NameIdentifier, claims.Id!),
+            new Claim(ClaimTypes.Name, claims.Name!),
+            new Claim(ClaimTypes.Email, claims.Email!),
+            new Claim(ClaimTypes.Role, claims.Role!)
                 }, "JwtAuth"));
         }
 

@@ -10,3 +10,7 @@ C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Cl
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\ClienteLibreria\obj\Debug\net8.0\refint\ClienteLibreria.dll
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\ClienteLibreria\obj\Debug\net8.0\ClienteLibreria.pdb
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\ClienteLibreria\obj\Debug\net8.0\ref\ClienteLibreria.dll
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\ClienteLibreria\bin\Debug\net8.0\BaseLibrary.dll
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\ClienteLibreria\bin\Debug\net8.0\BaseLibrary.pdb
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\ClienteLibreria\obj\Debug\net8.0\ClienteLibreria.csproj.AssemblyReference.cache
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\ClienteLibreria\obj\Debug\net8.0\ClienteL.B505C3AD.Up2Date
