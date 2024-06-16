@@ -1,44 +1,70 @@
 ﻿@page "/identity/account/login"
+@layout AuthenticationLayout
 <div class="container">
-    <div class="row col-lg-6">
-        <EditForm Enhance Model="User" OnValidSubmit="HandleLogin">
-            <DataAnnotationsValidator />
-            <ValidationSummary />
-            <div class="card">
-                <div class="card-header">Fill this form to login</div>
-                <div class="card-body">
-                    <div class="form-group mt-3">
-                        <label class="form-label">E-mail</label>
-                        <InputText @bind-Value="User.Email" class="form-control"></InputText>
+    <div class="row"
+        <div class="row col-lg-4"></div>
+        <div class="row col-lg-4">
+            <EditForm Enhance Model="User" OnValidSubmit="HandleLogin">
+                <DataAnnotationsValidator />
+                <div class="card bg-dark" style="opacity: 0.8; margin-top:50%; border-radius: 10px; color:white; font-weight: bold;">
+                    <div class="card-header text-center fs-5 mb-2">Login</div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12"></div>
+                            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 d-flex justify-content-center">
+                                <img style="border-radius: 20px" src="../images/companylogos/netcode.jpg" height="50" width="50" />
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12"></div>
+                        </div>
                     </div>
-                    <div class="form-group mt-3">
-                        <label class="form-label">Password</label>
-                        <input type="password" @bind="User.Password" class="form-control"></input>
+                    <div class="card-body">
+                        <div class="form-group mt-3">
+                            <label class="form-label">E-mail</label>
+                            <InputText @bind-Value="User.Email" class="form-control"></InputText>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" @bind="User.Password" class="form-control"></input>
+                        </div>
+                        <div class="form-group mt-3">
+                            <button class="btn btn-outline-primary float-end" type="submit">Login</button>
+                        </div>
                     </div>
-                    <div class="form-group mt-3">
-                        <button class="btn btn-outline-primary float-end" type="submit">Login</button>
+                    <div class="card-footer">
+                        <span class="text-center">
+                            Don't have an account? | <a class="btn-link" href="identity/account/register">Sign Up</a>
+                        </span>
+                        <ValidationSummary />
                     </div>
                 </div>
-            </div>
-        </EditForm>
+            </EditForm>
+        </div>
+        <div class="row col-lg-4"></div>
     </div>
 </div>
 
 
 @code {
+
+    public bool ShowLoadingButton { get; set; } = false;
     Login User = new();
 
     async Task HandleLogin()
     {
+        ShowLoadingButton = true;
         var result = await accountService.SignInAsync(User);
-
         if (result.flag)
         {
             var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthStateProvider;
             await customAuthStateProvider.UpdateAuthenticationState(new UserSession()
-                    { Token = result.token, RefreshToken = result.refreshToken});
+                {
+                    Token = result.token,
+                    RefreshToken = result.refreshToken
+                });
             NavManager.NavigateTo("/", forceLoad: true);
         }
+        ShowLoadingButton = false;
     }
+
 }
 

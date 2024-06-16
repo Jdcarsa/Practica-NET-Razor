@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XVwecnsNX5CDKQFIQ+4asb6DpokXvKrCErUmIuSfrbjcXxobJBu6uNhbaoCsj6QhL/OYSJpwUh6Znbf0dDLO+A==",
+  "dgSpecHash": "bXy4WJGrR3IODfP2/vVF17MDcVJJZ4qdx+NK0rG9QwQa6dowGGuGSDPXOTWWedz9NPWdufsSd8l2yj6XkT+x5A==",
   "success": true,
   "projectFilePath": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Cliente.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,11 @@
     "C:\\Users\\ideapad330S\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.6\\microsoft.jsinterop.webassembly.8.0.6.nupkg.sha512",
     "C:\\Users\\ideapad330S\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.6\\microsoft.net.illink.tasks.8.0.6.nupkg.sha512",
     "C:\\Users\\ideapad330S\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.6\\microsoft.net.sdk.webassembly.pack.8.0.6.nupkg.sha512",
+    "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.buttons\\23.1.36\\syncfusion.blazor.buttons.23.1.36.nupkg.sha512",
+    "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.core\\23.1.36\\syncfusion.blazor.core.23.1.36.nupkg.sha512",
+    "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.popups\\23.1.36\\syncfusion.blazor.popups.23.1.36.nupkg.sha512",
+    "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.themes\\23.1.36\\syncfusion.blazor.themes.23.1.36.nupkg.sha512",
+    "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.licensing\\23.1.36\\syncfusion.licensing.23.1.36.nupkg.sha512",
     "C:\\Users\\ideapad330S\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "C:\\Users\\ideapad330S\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.6.0\\system.identitymodel.tokens.jwt.7.6.0.nupkg.sha512",
     "C:\\Users\\ideapad330S\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
