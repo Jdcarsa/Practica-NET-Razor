@@ -1,14 +1,15 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace BaseLibrary.Entities
 {
     public class BaseEntity
     {
         public int Id { get; set; }
-        public string? Name { get; set; }
+        [Required]
+        public string? Name { get; set; } =  string.Empty;
 
-        [JsonIgnore]
-        public List<Employee>? Employees { get; set; }
+
 
     }
 }

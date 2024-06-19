@@ -1,6 +1,8 @@
 ﻿@page "/nav"
+@using Cliente.ApplicationStates
 @using Microsoft.AspNetCore.Components.Authorization
 
+@inject DepartmentState departmentState
 <AuthorizeView>
     <Authorized>
         <div class="top-row ps-3 navbar navbar-dark">
@@ -50,7 +52,7 @@
                     <div class="nav-link p-2 text-white" style="margin-left:5rem; visibility:@DepartmentCssStyle">
                         <ul class="list-group">
                             <li style="list-style:none">
-                                <a class="nav-link p-2" style="cursor:pointer;">
+                                <a class="nav-link p-2" style="cursor:pointer;" @onclick="GeneralDepartmentClicked">
                                     <div class="hstack">
                                         <span class="bi bi-file-medical fs-5 text-center" aria-hidden="true" style="margin-top:-2rem;"></span>
                                         <span class="fs-6">General</span>
@@ -129,6 +131,6 @@
 
     void GeneralDepartmentClicked()
     {
-        
+        departmentState.GeneralDepartmentClick();
     }
 }

@@ -1,10 +1,12 @@
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\appsettings.json
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\libman.json
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\Servidor.exe
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\Servidor.deps.json
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\Servidor.runtimeconfig.json
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\Servidor.dll
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\Servidor.pdb
+C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\Humanizer.dll
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -119,5 +121,3 @@ C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Se
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\obj\Debug\net8.0\Servidor.pdb
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\obj\Debug\net8.0\Servidor.genruntimeconfig.cache
 C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\obj\Debug\net8.0\ref\Servidor.dll
-C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\AutoMapper.dll
-C:\Users\ideapad330S\Documents\GitHub\Practica-NET-Razor\Razor-Pages-Practica\Servidor\bin\Debug\net8.0\libman.json
