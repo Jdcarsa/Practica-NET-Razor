@@ -16,7 +16,9 @@ namespace ServerLibrary.Data
         public DbSet<Branch> Branches { get; set; }
 
         //All countrys / cities 
+        public DbSet<Country> Countries { get; set; }
         public DbSet<Town> Towns { get; set; }
+        public DbSet<City> Cities { get; set; }
 
         //Security
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }

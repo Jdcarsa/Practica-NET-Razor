@@ -85,7 +85,7 @@ namespace ServerLibrary.Data.Migrations
 
                     b.HasIndex("countryId");
 
-                    b.ToTable("City");
+                    b.ToTable("Cities");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.Country", b =>
@@ -102,7 +102,7 @@ namespace ServerLibrary.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Country");
+                    b.ToTable("Countries");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.Department", b =>
