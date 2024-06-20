@@ -1,5 +1,6 @@
-using Blazored.LocalStorage;
+using BaseLibrary.Entities;
 using Cliente;
+using Blazored.LocalStorage;
 using Cliente.ApplicationStates;
 using ClienteLibreria.Helpers;
 using ClienteLibreria.Services.Contracts;
@@ -7,6 +8,7 @@ using ClienteLibreria.Services.Implementations;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using ServerLibrary.Repositories.Implementations;
 using Syncfusion.Blazor;
 using Syncfusion.Blazor.Popups;
 
@@ -26,6 +28,20 @@ builder.Services.AddScoped<LocalStorageService>();
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
 builder.Services.AddAuthorizationCore();
 builder.Services.AddScoped<IUserAccountService, UserAccountService>();
+
+// General Department / Department / Branch
+builder.Services.AddScoped<IGenericServiceInterface<GeneralDepartment>, GenericServiceImp<GeneralDepartment>>();
+builder.Services.AddScoped<IGenericServiceInterface<Department>, GenericServiceImp<Department>>();
+builder.Services.AddScoped<IGenericServiceInterface<Branch>, GenericServiceImp<Branch>>();
+
+// Country / City / Town
+builder.Services.AddScoped<IGenericServiceInterface<Country>, GenericServiceImp<Country>>();
+builder.Services.AddScoped<IGenericServiceInterface<City>, GenericServiceImp<City>>();
+builder.Services.AddScoped<IGenericServiceInterface<Town>, GenericServiceImp<Town>>();
+
+// Employee
+builder.Services.AddScoped<IGenericServiceInterface<Employee>, GenericServiceImp<Employee>>();
+
 builder.Services.AddScoped<DepartmentState>();
 builder.Services.AddSyncfusionBlazor();
 builder.Services.AddScoped<SfDialogService>();

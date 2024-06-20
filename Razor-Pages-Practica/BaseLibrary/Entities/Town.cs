@@ -1,9 +1,8 @@
 ﻿
 namespace BaseLibrary.Entities
 {
-    public class Town :BaseEntity
+    public class Town : BaseEntity
     {
-
         public List<Employee>? Employees { get; set; }
         public City? City { get; set; }
         public int cityId { get; set; }

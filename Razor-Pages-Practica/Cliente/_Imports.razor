@@ -17,6 +17,25 @@
 
 
 @inject AuthenticationStateProvider AuthStateProvider
-@inject IUserAccountService accountService
 @inject NavigationManager NavManager
+
+@* Authentication *@
+@inject IUserAccountService accountService
+
+@* Syncfusion dialog service *@
+@inject SfDialogService dialogService
+
+@* General Departments / Department / Branch *@
+@inject IGenericServiceInterface<GeneralDepartment> generalDepartmentService
+@inject IGenericServiceInterface<Department> departmentService
+@inject IGenericServiceInterface<Branch> branchService
+
+@* Country / City / Town *@
+@inject IGenericServiceInterface<Country> countryService
+@inject IGenericServiceInterface<City> cityService
+@inject IGenericServiceInterface<Town> townService
+
+@* Employee *@
+@inject IGenericServiceInterface<Employee> employeeService
+
 
