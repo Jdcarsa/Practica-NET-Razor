@@ -1,5 +1,7 @@
 ﻿@using System.Net.Http
 @using System.Net.Http.Json
+@using BaseLibrary.Entities
+@using Cliente.ApplicationStates
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.AspNetCore.Components.Web
@@ -14,13 +16,20 @@
 @using ClienteLibreria.Helpers
 @using Microsoft.AspNetCore.Components.Authorization
 @using ClienteLibreria.Services.Contracts
+@using Syncfusion.Blazor.Popups
+@using Syncfusion.Blazor.Buttons
 
+@using Cliente.Pages.DepartmentPages
+@using Cliente.Pages.OthersPages
 
 @inject AuthenticationStateProvider AuthStateProvider
 @inject NavigationManager NavManager
 
 @* Authentication *@
 @inject IUserAccountService accountService
+
+@inject AllState allState
+
 
 @* Syncfusion dialog service *@
 @inject SfDialogService dialogService

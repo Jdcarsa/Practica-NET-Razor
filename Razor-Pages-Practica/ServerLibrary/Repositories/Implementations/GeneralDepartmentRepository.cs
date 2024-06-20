@@ -12,7 +12,7 @@ namespace ServerLibrary.Repositories.Implementations
     public class GeneralDepartmentRepository(AppDbContext appDbContext) : IGenericRepositoryInterface<GeneralDepartment>
     {
 
-        private static GeneralResponse NotFound() => new(false, "Sorry department not found");
+        private static GeneralResponse NotFound() => new(false, "Sorry general department not found");
         private static GeneralResponse Success() => new(true, "Process Completed");
         private async Task Commit() => await appDbContext.SaveChangesAsync();
         public async Task<GeneralResponse> DeleteById(int id)
@@ -35,7 +35,8 @@ namespace ServerLibrary.Repositories.Implementations
 
         public async Task<GeneralResponse> Insert(GeneralDepartment item)
         {
-            if (!await CheckName(item.Name!)) return new GeneralResponse(false, "Department already added");
+            var checkIfNull = await CheckName(item.Name!);
+            if (!checkIfNull) return new GeneralResponse(false, "General Department already added");
             appDbContext.GeneralDepartments.Add(item);
             await Commit();
             return Success();
@@ -52,7 +53,7 @@ namespace ServerLibrary.Repositories.Implementations
 
         private async Task<bool> CheckName(string name)
         {
-            var item = await appDbContext.Departments.FirstOrDefaultAsync(d => d.Name!.ToLower().Equals(name.ToLower()));
+            var item = await appDbContext.GeneralDepartments.FirstOrDefaultAsync(d => d.Name!.ToLower().Equals(name.ToLower()));
             return item is null;
         }
     }
