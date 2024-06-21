@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bXy4WJGrR3IODfP2/vVF17MDcVJJZ4qdx+NK0rG9QwQa6dowGGuGSDPXOTWWedz9NPWdufsSd8l2yj6XkT+x5A==",
+  "dgSpecHash": "ckO+/sIpVqlg4O+ojkgUIfTOk1Zl/AkzO9o9wfRjWCE5L7GMWYP26dO27CeAB3m2qosVuVn9ZqWD2f0KQjxMAA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Cliente.csproj",
   "expectedPackageFiles": [
@@ -43,7 +43,13 @@
     "C:\\Users\\ideapad330S\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.6\\microsoft.net.sdk.webassembly.pack.8.0.6.nupkg.sha512",
     "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.buttons\\23.1.36\\syncfusion.blazor.buttons.23.1.36.nupkg.sha512",
     "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.core\\23.1.36\\syncfusion.blazor.core.23.1.36.nupkg.sha512",
+    "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.data\\23.1.36\\syncfusion.blazor.data.23.1.36.nupkg.sha512",
+    "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.dropdowns\\23.1.36\\syncfusion.blazor.dropdowns.23.1.36.nupkg.sha512",
+    "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.inputs\\23.1.36\\syncfusion.blazor.inputs.23.1.36.nupkg.sha512",
+    "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.notifications\\23.1.36\\syncfusion.blazor.notifications.23.1.36.nupkg.sha512",
     "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.popups\\23.1.36\\syncfusion.blazor.popups.23.1.36.nupkg.sha512",
+    "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.spinner\\23.1.36\\syncfusion.blazor.spinner.23.1.36.nupkg.sha512",
+    "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\23.1.36\\syncfusion.blazor.splitbuttons.23.1.36.nupkg.sha512",
     "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.blazor.themes\\23.1.36\\syncfusion.blazor.themes.23.1.36.nupkg.sha512",
     "C:\\Users\\ideapad330S\\.nuget\\packages\\syncfusion.licensing\\23.1.36\\syncfusion.licensing.23.1.36.nupkg.sha512",
     "C:\\Users\\ideapad330S\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",

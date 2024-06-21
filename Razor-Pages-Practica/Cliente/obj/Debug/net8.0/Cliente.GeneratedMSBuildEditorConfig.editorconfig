@@ -46,20 +46,60 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25QYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/DepartmentPages/BranchDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydG1lbnRQYWdlc1xCcmFuY2hEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/DepartmentPages/BranchPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydG1lbnRQYWdlc1xCcmFuY2hQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/DepartmentPages/DepartmentDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydG1lbnRQYWdlc1xEZXBhcnRtZW50RGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/DepartmentPages/DepartmentPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydG1lbnRQYWdlc1xEZXBhcnRtZW50UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/DepartmentPages/GeneralDepartmentDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydG1lbnRQYWdlc1xHZW5lcmFsRGVwYXJ0bWVudERpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/DepartmentPages/GeneralDepartmentPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydG1lbnRQYWdlc1xHZW5lcmFsRGVwYXJ0bWVudFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/HomePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEhvbWVQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/LocationPages/CityDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcQ2l0eURpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/LocationPages/CityPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcQ2l0eVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/LocationPages/CountryDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcQ291bnRyeURpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/LocationPages/CountryPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcQ291bnRyeVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/LocationPages/TownDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcVG93bkRpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/LocationPages/TownPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcVG93blBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/DepartmentPages/GeneralDepartmentDialog.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudFBhZ2VzXEdlbmVyYWxEZXBhcnRtZW50RGlhbG9nLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/DepartmentPages/GeneralDepartmentPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudFBhZ2VzXEdlbmVyYWxEZXBhcnRtZW50UGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/ButtonLoaderSpinner.razor]

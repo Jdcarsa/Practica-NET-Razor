@@ -1,0 +1,42 @@
+﻿
+
+<CountryDialog @ref="countryDialog" 
+    HandleSaveOperationDoneEvent="HandleSaveOperationDoneEvent"
+    Country="Country" />
+
+
+
+@code {
+        public string Title { get; set; } = "Add";
+        CountryDialog? countryDialog;
+        Country Country = new();
+        public List<Country> Countries { get; set; } = new();
+
+        protected async override Task OnInitializedAsync()
+        {
+        await GetCountries();
+        StateHasChanged();
+        }
+
+        private async Task GetCountries()
+        {
+        Countries = await countryService.GetAll(Constants.CountryBaseUrl);
+        }
+
+    void AddButtonClicked()
+    {
+        if (countryDialog != null)
+        {
+            countryDialog.ChangeTitle("Add");
+            Country = new Country();
+            OpenDialog();
+        }
+    }
+
+    void OpenDialog()
+    {
+        countryDialog?.OpenDialog();
+    }
+
+
+}

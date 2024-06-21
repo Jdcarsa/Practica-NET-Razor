@@ -1,8 +1,14 @@
 ﻿@page "/home/dashboard"
+
 @layout MainLayout
 
 <TableBanner/>
 <GeneralDepartmentPage></GeneralDepartmentPage>
+<DepartmentPage></DepartmentPage>
+<BranchPage></BranchPage>
+<CityPage></CityPage>
+<TownPage></TownPage>
+<CountryPage></CountryPage>
 @code {
     [CascadingParameter] public Task<AuthenticationState> AuthenticationState { get; set; }
     protected async override Task OnInitializedAsync()

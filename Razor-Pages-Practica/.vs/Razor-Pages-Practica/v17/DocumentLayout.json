@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\departmentpages\\generaldepartmentpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\departmentpages\\generaldepartmentpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\locationpages\\countrypage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\contentpages\\locationpages\\countrypage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\locationpages\\countrydialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\contentpages\\locationpages\\countrydialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\locationpages\\citypage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\contentpages\\locationpages\\citypage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\locationpages\\citydialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\contentpages\\locationpages\\citydialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\locationpages\\townpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\contentpages\\locationpages\\townpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\locationpages\\towndialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\contentpages\\locationpages\\towndialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -83,14 +107,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GeneralDepartmentPage.razor",
-              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\DepartmentPages\\GeneralDepartmentPage.razor",
-              "RelativeDocumentMoniker": "Cliente\\Pages\\DepartmentPages\\GeneralDepartmentPage.razor",
-              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\DepartmentPages\\GeneralDepartmentPage.razor",
-              "RelativeToolTip": "Cliente\\Pages\\DepartmentPages\\GeneralDepartmentPage.razor",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAAAHsAAAA0AAAA",
+              "Title": "CountryPage.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\CountryPage.razor",
+              "RelativeDocumentMoniker": "Cliente\\Pages\\ContentPages\\LocationPages\\CountryPage.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\CountryPage.razor",
+              "RelativeToolTip": "Cliente\\Pages\\ContentPages\\LocationPages\\CountryPage.razor",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAkwCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T16:23:41.481Z",
+              "WhenOpened": "2024-06-21T03:41:52.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CountryDialog.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\CountryDialog.razor",
+              "RelativeDocumentMoniker": "Cliente\\Pages\\ContentPages\\LocationPages\\CountryDialog.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\CountryDialog.razor",
+              "RelativeToolTip": "Cliente\\Pages\\ContentPages\\LocationPages\\CountryDialog.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T03:41:47.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\_Imports.razor",
+              "RelativeDocumentMoniker": "Cliente\\_Imports.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\_Imports.razor",
+              "RelativeToolTip": "Cliente\\_Imports.razor",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T03:39:48.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CityPage.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\CityPage.razor",
+              "RelativeDocumentMoniker": "Cliente\\Pages\\ContentPages\\LocationPages\\CityPage.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\CityPage.razor",
+              "RelativeToolTip": "Cliente\\Pages\\ContentPages\\LocationPages\\CityPage.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T03:28:31.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CityDialog.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\CityDialog.razor",
+              "RelativeDocumentMoniker": "Cliente\\Pages\\ContentPages\\LocationPages\\CityDialog.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\CityDialog.razor",
+              "RelativeToolTip": "Cliente\\Pages\\ContentPages\\LocationPages\\CityDialog.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T03:28:18.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TownPage.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\TownPage.razor",
+              "RelativeDocumentMoniker": "Cliente\\Pages\\ContentPages\\LocationPages\\TownPage.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\TownPage.razor",
+              "RelativeToolTip": "Cliente\\Pages\\ContentPages\\LocationPages\\TownPage.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T03:28:04.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TownDialog.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\TownDialog.razor",
+              "RelativeDocumentMoniker": "Cliente\\Pages\\ContentPages\\LocationPages\\TownDialog.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\LocationPages\\TownDialog.razor",
+              "RelativeToolTip": "Cliente\\Pages\\ContentPages\\LocationPages\\TownDialog.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T03:27:50.736Z",
               "EditorCaption": ""
             }
           ]
