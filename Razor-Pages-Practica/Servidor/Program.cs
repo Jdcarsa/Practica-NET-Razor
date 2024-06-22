@@ -47,10 +47,11 @@ builder.Services.AddScoped<IUserAccount , UserAccountRepository>();
 builder.Services.AddScoped<IGenericRepositoryInterface<GeneralDepartment>, GeneralDepartmentRepository>();
 builder.Services.AddScoped<IGenericRepositoryInterface<Department>, DepartmentRepository>();
 builder.Services.AddScoped<IGenericRepositoryInterface<Branch>, BranchRepository>();
-
 builder.Services.AddScoped<IGenericRepositoryInterface<Country>, CountryRepository>();
 builder.Services.AddScoped<IGenericRepositoryInterface<City>, CityRepository>();
 builder.Services.AddScoped<IGenericRepositoryInterface<Town>, TownRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Employee>, EmployeeRepository>();
+
 
 
 
