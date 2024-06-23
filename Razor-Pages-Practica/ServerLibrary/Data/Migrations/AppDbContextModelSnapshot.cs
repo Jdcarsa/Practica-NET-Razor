@@ -185,10 +185,6 @@ namespace ServerLibrary.Data.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("JobName")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -529,7 +525,7 @@ namespace ServerLibrary.Data.Migrations
             modelBuilder.Entity("BaseLibrary.Entities.Overtime", b =>
                 {
                     b.HasOne("BaseLibrary.Entities.OvertimeType", "OvertimeType")
-                        .WithMany()
+                        .WithMany("Overtimes")
                         .HasForeignKey("OvertimeTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -591,6 +587,11 @@ namespace ServerLibrary.Data.Migrations
             modelBuilder.Entity("BaseLibrary.Entities.GeneralDepartment", b =>
                 {
                     b.Navigation("Departments");
+                });
+
+            modelBuilder.Entity("BaseLibrary.Entities.OvertimeType", b =>
+                {
+                    b.Navigation("Overtimes");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.SactionType", b =>

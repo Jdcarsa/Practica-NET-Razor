@@ -9,7 +9,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <button class="btn btn-outline-success" @onclick="ShowAddOrUpdateEmployeeClicked">
+                            <button class="btn btn-outline-success" @onclick="ShowAddOrUpdateEmployeeButtonClicked">
                                 <i class="bi bi-plus-circle-dotted"></i>
                                 Add Employee</button>
                         </div>
@@ -33,6 +33,15 @@
                                     <GridColumn Field=@nameof(Employee.JobName) HeaderText="Job Name"></GridColumn>
                                     <GridColumn Field=@nameof(Employee.Branch.Name) HeaderText="Branch"></GridColumn>
                                     <GridColumn Field=@nameof(Employee.Town.Name) HeaderText="Town"></GridColumn>
+                                    <GridColumn HeaderText="Menu" HeaderTextAlign="TextAlign.Left">
+                                        <Template>
+                                            @{
+                                                var employee = (context as Employee);
+                                                <i class="bi bi-menu-down text-primary" id="cursorStyle" @onclick="()=>ShowMenuPopUp(employee!)"></i>
+                                            }
+                                        </Template>
+                                    </GridColumn>
+
                                 </GridColumns>
                             </SfGrid>
                         </div>
@@ -45,19 +54,117 @@
     }
 }
 
-<AddOrUpdatePage ShowAddOrUpdateEmployee="ShowAddOrUpdatePage"></AddOrUpdatePage>
-@code {
-    public List<Employee> Employees { get; set; } = new();
+<AddOrUpdatePage @ref="addOrUpdatePageEmployee"
+    Employee="Employee"
+                 NotifyParentFormCloseClicked="NotifyParentFormCloseClicked"
+    Countries="DefaultCountries"
+    Cities="SelectedCities"
+    Towns="SelectedTowns"
+    GeneralDepartments="DefaultGeneralDepartments"
+    Departments="SelectedDepartments"
+    Branches="SelectedBranches"
+    HandleCountrySelectedEvent="HandleCountrySelectedEvent"
+                 HandleCitySelectedEvent="HandleCitySelectedEvent"
+                 HandleGeneralDepartmentSelectedEvent="HandleGeneralDepartmentSelectedEvent"
+                 HandleSaveEmployeeClickedEvent="HandleSaveEmployeeClickedEvent"
+                 ShowAddOrUpdateEmployee="ShowAddOrUpdatePage">
+</AddOrUpdatePage>
 
-    protected async override Task OnInitializedAsync()
+@code {
+    AddOrUpdatePage? addOrUpdatePageEmployee;
+    public Employee Employee { get; set; } = new();
+    public List<Employee> Employees { get; set; } = [];
+
+    public List<Country> DefaultCountries { get; set; } = [];
+    public List<City> DefaultCities { get; set; } = [];
+    public List<Town> DefaultTowns { get; set; } = [];
+
+
+    public List<GeneralDepartment> DefaultGeneralDepartments { get; set; } = [];
+    public List<Department> DefaultDepartments { get; set; } = [];
+    public List<Branch> DefaultBranches { get; set; } = [];
+
+    public List<Department> SelectedDepartments { get; set; } = new List<Department>();
+    public List<Branch> SelectedBranches { get; set; } = new List<Branch>();
+    public List<City> SelectedCities { get; set; } = new List<City>();
+    public List<Town> SelectedTowns { get; set; } = new List<Town>();
+
+    protected override async Task OnInitializedAsync()
     {
+        await LoadEmployees();
+        await LoadDefaults();
         allState.Action += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        allState.Action -= StateHasChanged;
+    }
+
+    private async Task LoadDefaults()
+    {
+        DefaultCountries = await countryService.GetAll(Constants.CountryBaseUrl);
+        DefaultCities = await cityService.GetAll(Constants.CityBaseUrl);
+        DefaultTowns = await townService.GetAll(Constants.TownBaseUrl);
+        DefaultGeneralDepartments = await generalDepartmentService.GetAll(Constants.GeneralDepartmentBaseUrl);
+        DefaultDepartments = await departmentService.GetAll(Constants.DepartmentBaseUrl);
+        DefaultBranches = await branchService.GetAll(Constants.BranchBaseUrl);
+    }
+
+    private async Task NotifyParentFormCloseClicked()
+    {
+        ShowMainPage = true;
+        ShowAddOrUpdatePage = false;
         await LoadEmployees();
     }
+    //country select
+    private void HandleCountrySelectedEvent(int countryId) =>
+        SelectedCities = DefaultCities.Where(c => c.countryId == countryId).ToList();
+
+    //city select
+    private void HandleCitySelectedEvent(int cityId) =>
+        SelectedTowns = DefaultTowns.Where(t => t.cityId == cityId).ToList();
+
+    //General department select
+    void HandleGeneralDepartmentSelectedEvent(int generalDepartmentId) =>
+        SelectedDepartments = DefaultDepartments.Where(gd => gd.generalDepartmentId == generalDepartmentId).ToList();
+
+    //Department select
+    void HandleDepartmentSelectedEvent(int departmentId) =>
+        SelectedBranches = DefaultBranches.Where(d => d.departmentId == departmentId).ToList();
 
     private async Task LoadEmployees()
     {
         Employees = await employeeService.GetAll(Constants.EmployeeBaseUrl);
+    }
+
+    public Employee SelectedEmployee { get; set; } = new();
+
+    ContentMenu? contextMenu;
+    void ShowMenuPopUp(Employee employee)
+    {
+        SelectedEmployee = employee;
+        contextMenu!.OpenContextMenu();
+    }
+
+
+    async Task HandleSaveEmployeeClickedEvent(Employee employee)
+    {
+        bool successCheck = false;
+        if (employee.Id > 0)
+        {
+            var result = await employeeService.Update(employee, Constants.EmployeeBaseUrl);
+            successCheck = await DisplayMessage(result.flag, result.message);
+        }
+        else
+        {
+            var response = await employeeService.Insert(employee, Constants.EmployeeBaseUrl);
+            successCheck = await DisplayMessage(response.flag, response.message);
+        }
+        if (successCheck)
+        {
+            addOrUpdatePageEmployee!.ClearContent();
+        }
     }
 
     public bool ShowMainPage { get; set; } = true;
@@ -67,6 +174,20 @@
     {
         ShowMainPage = false;
         ShowAddOrUpdatePage = true;
+    }
+
+    private async Task<bool> DisplayMessage(bool flag, string message)
+    {
+        if (flag)
+        {
+            await dialogService.AlertAsync(message, "Success Operation");
+            return true;
+        }
+        else
+        {
+            await dialogService.AlertAsync(message, "Alert!");
+            return false;
+        }
     }
 
 }

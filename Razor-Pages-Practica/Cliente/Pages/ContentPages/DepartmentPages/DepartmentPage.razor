@@ -125,7 +125,7 @@
 		departmentDialog?.OpenDialog();
 	}
 
-	private async Task DeleteClicked(GeneralDepartment dep)
+	private async Task DeleteClicked(Department dep)
 	{
 		bool confirm = await dialogService.ConfirmAsync($"Are you sure you want to delete {dep.Name}?", "Confirm Delete");
 		if (!confirm) return;

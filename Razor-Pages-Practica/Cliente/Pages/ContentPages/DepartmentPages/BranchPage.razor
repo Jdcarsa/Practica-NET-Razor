@@ -16,7 +16,7 @@
                          <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th scope="col">@</th>
+                                    <th scope="col">#</th>
                                     <th scope="col">Department</th>
                                     <th scope="col">Branch</th>
                                     <th scope="col">Action</th>
@@ -66,7 +66,7 @@
 @code{
 	Branch Branch = new();
 	[Parameter] public List<Department> Departments { get; set; } = new();
-	[Parameter] public List<Branch> branches { get; set; } = new();
+	[Parameter] public List<Branch> Branches { get; set; } = new();
 	BranchDialog? branchDialog;
 	public string Title { get; set; } = "Add";
 
@@ -79,12 +79,12 @@
 	{
 		await GetBranches();
 		await GetDepartments();
-		StateHasChanged();
+		allState.Action += StateHasChanged;
 	}
 
 	private async Task GetBranches()
 	{
-		branches = await branchService.GetAll(Constants.BranchBaseUrl);
+		Branches = await branchService.GetAll(Constants.BranchBaseUrl);
 	}
 
 	private async Task GetDepartments()
@@ -154,6 +154,11 @@
 			await dialogService.AlertAsync(message, "Alert!");
 			return false;
 		}
+	}
+
+	public void Dispose()
+	{
+		allState.Action -= StateHasChanged;
 	}
 
 }

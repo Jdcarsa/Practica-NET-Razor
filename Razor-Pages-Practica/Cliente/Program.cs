@@ -42,7 +42,7 @@ builder.Services.AddScoped<IGenericServiceInterface<Town>, GenericServiceImp<Tow
 // Employee
 builder.Services.AddScoped<IGenericServiceInterface<Employee>, GenericServiceImp<Employee>>();
 
-builder.Services.AddScoped<DepartmentState>();
+builder.Services.AddScoped<AllState>();
 builder.Services.AddSyncfusionBlazor();
 builder.Services.AddScoped<SfDialogService>();
 await builder.Build().RunAsync();
