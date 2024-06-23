@@ -241,6 +241,10 @@
               "target": "Package",
               "version": "[23.1.36, )"
             },
+            "Syncfusion.Blazor.Grid": {
+              "target": "Package",
+              "version": "[23.1.36, )"
+            },
             "Syncfusion.Blazor.Popups": {
               "target": "Package",
               "version": "[23.1.36, )"

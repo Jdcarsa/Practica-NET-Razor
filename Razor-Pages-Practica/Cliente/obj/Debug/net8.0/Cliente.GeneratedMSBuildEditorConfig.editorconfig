@@ -74,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEVtcGxveWVlUGFnZXNcQWRkT3JVcGRhdGVQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/EmployeePages/EmployeePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEVtcGxveWVlUGFnZXNcRW1wbG95ZWVQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/HomePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEhvbWVQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
