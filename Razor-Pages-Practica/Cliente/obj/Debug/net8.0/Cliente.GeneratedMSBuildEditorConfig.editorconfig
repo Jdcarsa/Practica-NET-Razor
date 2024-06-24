@@ -74,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEVtcGxveWVlUGFnZXNcQWRkT3JVcGRhdGVQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/EmployeePages/EmployeeDetailsPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEVtcGxveWVlUGFnZXNcRW1wbG95ZWVEZXRhaWxzUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/ContentPages/EmployeePages/EmployeePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEVtcGxveWVlUGFnZXNcRW1wbG95ZWVQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -124,6 +128,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/ContentMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcQ29udGVudE1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/DoctorPages/DoctorDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcRG9jdG9yUGFnZXNcRG9jdG9yRGlhbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/ProfileDropDown.razor]

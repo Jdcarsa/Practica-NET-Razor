@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\employeepages\\employeepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\contentpages\\employeepages\\employeepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\otherspages\\doctorpages\\doctordialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\otherspages\\doctorpages\\doctordialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\otherspages\\contentmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\otherspages\\contentmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\employeepages\\employeepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\contentpages\\employeepages\\employeepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\employeepages\\addorupdatepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{12B6503C-562F-45DC-97ED-643AEE9F7148}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\baselibrary\\dtos\\employeegrouping1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12B6503C-562F-45DC-97ED-643AEE9F7148}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\employeegrouping1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\employeepages\\employeedetailspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\contentpages\\employeepages\\employeedetailspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 235,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,26 +98,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContentMenu.razor",
-              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\OthersPages\\ContentMenu.razor",
-              "RelativeDocumentMoniker": "Cliente\\Pages\\OthersPages\\ContentMenu.razor",
-              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\OthersPages\\ContentMenu.razor",
-              "RelativeToolTip": "Cliente\\Pages\\OthersPages\\ContentMenu.razor",
-              "ViewState": "AQIAADcAAAAAAAAAAAAuwFAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "DoctorDialog.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\OthersPages\\DoctorPages\\DoctorDialog.razor",
+              "RelativeDocumentMoniker": "Cliente\\Pages\\OthersPages\\DoctorPages\\DoctorDialog.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\OthersPages\\DoctorPages\\DoctorDialog.razor",
+              "RelativeToolTip": "Cliente\\Pages\\OthersPages\\DoctorPages\\DoctorDialog.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-23T03:11:55.705Z",
+              "WhenOpened": "2024-06-24T01:55:24.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "EmployeeDetailsPage.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeeDetailsPage.razor",
+              "RelativeDocumentMoniker": "Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeeDetailsPage.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeeDetailsPage.razor",
+              "RelativeToolTip": "Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeeDetailsPage.razor",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAuwFkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-24T00:28:42.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "EmployeePage.razor",
               "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeePage.razor",
               "RelativeDocumentMoniker": "Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeePage.razor",
               "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeePage.razor",
               "RelativeToolTip": "Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeePage.razor",
-              "ViewState": "AQIAAH8AAAAAAAAAAAAYwJQAAAAAAAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAAAIQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-22T23:55:00.548Z",
               "EditorCaption": ""
@@ -139,7 +156,7 @@
               "RelativeDocumentMoniker": "Cliente\\Pages\\ContentPages\\EmployeePages\\AddOrUpdatePage.razor",
               "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\EmployeePages\\AddOrUpdatePage.razor",
               "RelativeToolTip": "Cliente\\Pages\\ContentPages\\EmployeePages\\AddOrUpdatePage.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHwAAAA3AAAA",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAAAHwAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-22T03:24:12.565Z",
               "EditorCaption": ""

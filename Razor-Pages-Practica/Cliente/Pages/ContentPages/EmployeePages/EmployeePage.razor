@@ -54,7 +54,7 @@
     }
 }
 
-<AddOrUpdatePage @ref="addOrUpdatePageEmployee"
+<AddOrUpdatePage @ref="addOrUpdateEmployee"
     Employee="Employee"
                  NotifyParentFormCloseClicked="NotifyParentFormCloseClicked"
     Countries="DefaultCountries"
@@ -70,8 +70,22 @@
                  ShowAddOrUpdateEmployee="ShowAddOrUpdatePage">
 </AddOrUpdatePage>
 
+<EmployeeDetailsPage EmployeeDetails="Employee"
+ShowDetailsPage="ShowDetailsPage"
+HandleDetailsPageCloseBtnClicked="HandleDetailsPageClosedClicked" />
+
+
+<ContentMenu @ref="contextMenu"
+    HandleDeleteClicked="DeleteClicked"
+    HandleEditClicked="EditClicked"
+    HandleViewClicked="ViewClicked"
+    HandleAddHealthClicked="AddHealthClicked"
+    HandleAddOvertimeClicked="AddOvertimeClicked"
+    HandleAddSanctionClicked="AddSanctionClicked"
+    HandleAddVacationClicked="AddVacationClicked" />
+
 @code {
-    AddOrUpdatePage? addOrUpdatePageEmployee;
+    AddOrUpdatePage? addOrUpdateEmployee;
     public Employee Employee { get; set; } = new();
     public List<Employee> Employees { get; set; } = [];
 
@@ -116,7 +130,9 @@
         ShowMainPage = true;
         ShowAddOrUpdatePage = false;
         await LoadEmployees();
+        SelectedEmployee = new();
     }
+
     //country select
     private void HandleCountrySelectedEvent(int countryId) =>
         SelectedCities = DefaultCities.Where(c => c.countryId == countryId).ToList();
@@ -138,15 +154,72 @@
         Employees = await employeeService.GetAll(Constants.EmployeeBaseUrl);
     }
 
-    public Employee SelectedEmployee { get; set; } = new();
+
 
     ContentMenu? contextMenu;
+    public bool ShowDetailsPage { get; set; } = false; 
+    public Employee SelectedEmployee { get; set; } = new();
     void ShowMenuPopUp(Employee employee)
     {
         SelectedEmployee = employee;
         contextMenu!.OpenContextMenu();
     }
 
+    void EditClicked()
+    {
+        // EmployeeGrouping1
+        addOrUpdateEmployee.Employee.Id = SelectedEmployee.Id;
+        addOrUpdateEmployee.EmployeeGroup1.Name = SelectedEmployee.Name!;
+        addOrUpdateEmployee.EmployeeGroup1.TelephoneNumber = SelectedEmployee.TelephoneNumber;
+        addOrUpdateEmployee.EmployeeGroup1.FileNumber = SelectedEmployee.FileNumber;
+        addOrUpdateEmployee.EmployeeGroup1.Address = SelectedEmployee.Address;
+        addOrUpdateEmployee.EmployeeGroup1.Photo = SelectedEmployee.Photo;
+
+        // EmployeeGroup2
+        addOrUpdateEmployee.EmployeeGroup2.JobName = SelectedEmployee.JobName!;
+        addOrUpdateEmployee.EmployeeGroup2.Other = SelectedEmployee.Other;
+        // General Department / Department / Branch
+        addOrUpdateEmployee.GeneralDepartment = SelectedEmployee.Branch.Department.generalDepartment.Name;
+        addOrUpdateEmployee.Department = SelectedEmployee.Branch.Department.Name!;
+        addOrUpdateEmployee.Branch = SelectedEmployee.Branch.Name!;
+
+        // Country / City / Town
+        addOrUpdateEmployee.Country = SelectedEmployee.Town.City.Country.Name;
+        addOrUpdateEmployee.City = SelectedEmployee.Town.City.Name!;
+        addOrUpdateEmployee.Town = SelectedEmployee.Town.Name!;
+
+        // Title I
+        addOrUpdateEmployee.Title = "Update";
+        SelectedEmployee = new();
+        contextMenu!.CloseContextMenu();
+        ShowAddOrUpdatePage = true;
+        ShowMainPage = false;
+
+    }
+
+    private async Task DeleteClicked()
+    {
+        contextMenu.CloseContextMenu();
+        bool confirm = await dialogService.ConfirmAsync($"Are you sure you want to delete {SelectedEmployee.Name}?", "Confirm Delete");
+        if (!confirm) return;
+
+        var response = await branchService.DeleteById(SelectedEmployee.Id, Constants.EmployeeBaseUrl);
+        var result = await DisplayMessage(response.flag, response.message);
+        if (result)
+        {
+            SelectedEmployee = new();
+            await LoadEmployees();
+        }
+    }
+
+    private void ViewClicked()
+    {
+        Employee = SelectedEmployee;
+        contextMenu.CloseContextMenu();
+        ShowDetailsPage = true;
+        ShowMainPage = false;
+        SelectedEmployee = null;
+    }
 
     async Task HandleSaveEmployeeClickedEvent(Employee employee)
     {
@@ -188,6 +261,14 @@
             await dialogService.AlertAsync(message, "Alert!");
             return false;
         }
+    }
+
+
+    // Details employee Close btn clicked
+    void HandleDetailsPageCloseBtnClicked()
+    {
+        ShowDetailsPage = false;
+        ShowMainPage = true;
     }
 
 }
