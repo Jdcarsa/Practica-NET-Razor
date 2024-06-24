@@ -72,7 +72,7 @@
 
 <EmployeeDetailsPage EmployeeDetails="Employee"
 ShowDetailsPage="ShowDetailsPage"
-HandleDetailsPageCloseBtnClicked="HandleDetailsPageClosedClicked" />
+HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
 
 
 <ContentMenu @ref="contextMenu"
@@ -83,6 +83,8 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageClosedClicked" />
     HandleAddOvertimeClicked="AddOvertimeClicked"
     HandleAddSanctionClicked="AddSanctionClicked"
     HandleAddVacationClicked="AddVacationClicked" />
+
+<DoctorDialog @ref="doctorDialog" Doctor="Doctor" HandleSaveOperationEvent="SaveHealthEvent"/>
 
 @code {
     AddOrUpdatePage? addOrUpdateEmployee;
@@ -236,7 +238,7 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageClosedClicked" />
         }
         if (successCheck)
         {
-            addOrUpdatePageEmployee!.ClearContent();
+            addOrUpdateEmployee!.ClearContent();
         }
     }
 
@@ -269,6 +271,15 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageClosedClicked" />
     {
         ShowDetailsPage = false;
         ShowMainPage = true;
+    }
+
+    DoctorDialog? doctorDialog;
+    Doctor Doctor = new();
+    private void AddHealthClicked()
+    {
+        Doctor.EmployeeId = SelectedEmployee.Id;
+        contextMenu.CloseContextMenu();
+        doctorDialog.OpenDialog();
     }
 
 }
