@@ -9,7 +9,7 @@ namespace ServerLibrary.Repositories.Implementations
 {
     public class DoctorRepository(AppDbContext appDbContext) : IGenericRepositoryInterface<Doctor>
     {
-        private static GeneralResponse NotFound() => new(false, "Sorry Branch not found");
+        private static GeneralResponse NotFound() => new(false, "Sorry Doctor not found");
         private static GeneralResponse Success() => new(true, "Process Completed");
         private async Task Commit() => await appDbContext.SaveChangesAsync();
 

@@ -26,6 +26,9 @@
 @using Cliente.Pages.ContentPages.LocationPages
 @using Cliente.Pages.ContentPages.UserPages
 @using Cliente.Pages.OthersPages
+@using Cliente.Pages.OthersPages.SanctionPages
+@using Cliente.Pages.OthersPages.OvertimePages
+@using Cliente.Pages.OthersPages.VacationPages
 @using Cliente.Pages.AdministrationPages
 @using Cliente.Pages.ContentPages.EmployeePages
 
@@ -53,5 +56,16 @@
 
 @* Employee *@
 @inject IGenericServiceInterface<Employee> employeeService
+
+@inject IGenericServiceInterface<Overtime> overtimeService;
+@inject IGenericServiceInterface<OvertimeType> overtimeTypeService;
+
+@inject IGenericServiceInterface<Vacation> vacationService;
+@inject IGenericServiceInterface<VacationType> vacationTypeService;
+
+@inject IGenericServiceInterface<Sanction> sanctionService;
+@inject IGenericServiceInterface<SactionType> sanctionTypeService;
+@inject IGenericServiceInterface<Doctor> doctorService;
+
 
 

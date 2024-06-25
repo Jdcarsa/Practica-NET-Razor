@@ -52,6 +52,14 @@ builder.Services.AddScoped<IGenericRepositoryInterface<City>, CityRepository>();
 builder.Services.AddScoped<IGenericRepositoryInterface<Town>, TownRepository>();
 builder.Services.AddScoped<IGenericRepositoryInterface<Employee>, EmployeeRepository>();
 
+builder.Services.AddScoped<IGenericRepositoryInterface<Overtime>, OvertimeRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<OvertimeType>, OvertimeTypeRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Sanction>, SanctionRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<SactionType>, SanctionTypeRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Vacation>, VacationalRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<VacationType>, VacationTypeRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Doctor>, DoctorRepository>();
+
 
 
 

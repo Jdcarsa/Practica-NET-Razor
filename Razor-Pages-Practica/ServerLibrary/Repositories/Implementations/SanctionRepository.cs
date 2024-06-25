@@ -1,0 +1,58 @@
+﻿
+
+using BaseLibrary.Entities;
+using BaseLibrary.Responses;
+using Microsoft.EntityFrameworkCore;
+using ServerLibrary.Data;
+using ServerLibrary.Repositories.Contracts;
+
+namespace ServerLibrary.Repositories.Implementations
+{
+    public class SanctionRepository(AppDbContext appDbContext) : IGenericRepositoryInterface<Sanction>
+    {
+
+        private static GeneralResponse NotFound() => new(false, "Sorry Sanction not found");
+        private static GeneralResponse Success() => new(true, "Process Completed");
+        private async Task Commit() => await appDbContext.SaveChangesAsync();
+
+        public async Task<GeneralResponse> DeleteById(int id)
+        {
+            var item = await appDbContext.Sanctions.FirstOrDefaultAsync(e => e.EmployeeId == id);
+            if (item is null) return NotFound();
+
+            appDbContext.Sanctions.Remove(item);
+            await Commit();
+            return Success();
+        }
+
+        public async Task<List<Sanction>> GetAll() => await appDbContext.Sanctions
+            .AsNoTracking()
+            .Include(t => t.SactionType)
+            .ToListAsync();
+
+        public async Task<Sanction> GetById(int id) => await appDbContext.Sanctions
+            .FirstOrDefaultAsync(e => e.EmployeeId == id);
+
+        public async Task<GeneralResponse> Insert(Sanction item)
+        {
+            appDbContext.Sanctions.Add(item);
+            await Commit();
+            return Success();
+        }
+
+        public async Task<GeneralResponse> Update(Sanction item)
+        {
+            var obj = await appDbContext.Sanctions.FirstOrDefaultAsync(e => e.EmployeeId == item.EmployeeId);
+            if (obj is null) return NotFound();
+
+            obj.PunishmentDate = item.PunishmentDate;
+            obj.Punishment = item.Punishment;
+            obj.date = item.date;
+            obj.SactionType = item.SactionType;
+            await Commit();
+            return Success();
+        }
+
+
+    }
+}

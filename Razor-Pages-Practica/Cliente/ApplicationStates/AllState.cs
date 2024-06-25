@@ -67,7 +67,15 @@
 			Action?.Invoke();
 		}
 
-		private void ResetAllDepartments()
+        public bool ShowHealth { get; set; }
+        public void HealthClick()
+        {
+            ResetAllDepartments();
+            ShowHealth = true;
+            Action?.Invoke();
+        }
+
+        private void ResetAllDepartments()
         {
             ShowGeneralDepartment = false;
 			ShowDepartment = false;
@@ -77,7 +85,8 @@
 			ShowTown = false;
 			ShowUser = false;
 			ShowEmployee = false;
-		}
+            ShowHealth = false;
+        }
     }
 
 }

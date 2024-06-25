@@ -134,8 +134,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcRG9jdG9yUGFnZXNcRG9jdG9yRGlhbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/DoctorPages/DoctorPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcRG9jdG9yUGFnZXNcRG9jdG9yUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/OvertimePages/OvertimeDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcT3ZlcnRpbWVQYWdlc1xPdmVydGltZURpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/ProfileDropDown.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcUHJvZmlsZURyb3BEb3duLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/SanctionPages/SanctionDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcU2FuY3Rpb25QYWdlc1xTYW5jdGlvbkRpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/VacationPages/VacationDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcVmFjYXRpb25QYWdlc1xWYWNhdGlvbkRpYWxvZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/Weather.razor]

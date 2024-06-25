@@ -107,9 +107,10 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
 
     protected override async Task OnInitializedAsync()
     {
+        allState.Action += StateHasChanged;
         await LoadEmployees();
         await LoadDefaults();
-        allState.Action += StateHasChanged;
+
     }
 
     public void Dispose()
@@ -281,5 +282,50 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
         contextMenu.CloseContextMenu();
         doctorDialog.OpenDialog();
     }
+
+    // Save Health Handler
+    async Task SaveHealthEvent(Doctor item)
+    {
+        item.EmployeeId = SelectedEmployee.Id;
+        var (flag, message) = await doctorService.Insert(item, Constants.DoctorBaseUrl);
+        var response = await DisplayMessage(flag, message);
+        if (response)
+        {
+            SelectedEmployee = new();
+            Doctor = new();
+            doctorDialog!.CloseDialog();
+        }
+    }
+
+    OvertimeDialog? overtimeDialog;
+    Overtime Overtime = new();
+    List<OvertimeType> OvertimeTypes = [];
+    // Overtime clicked
+    private void AddOvertimeClicked()
+    {
+        Overtime.EmployeeId = SelectedEmployee.Id;
+        contextMenu.CloseContextMenu();
+        overtimeDialog!.OpenDialog();
+    }
+
+    SanctionDialog? sanctionDialog;
+    Sanction Sanction = new();
+    private void AddSanctionClicked()
+    {
+        Sanction.EmployeeId = SelectedEmployee.Id;
+        contextMenu!.CloseContextMenu();
+        sanctionDialog!.OpenDialog();
+    }
+
+    VacationDialog? vacationDialog;
+    Vacation Vacation = new();
+    private void AddVacationClicked()
+    {
+        Vacation.EmployeeId = SelectedEmployee.Id;
+        contextMenu.CloseContextMenu();
+        vacationDialog!.OpenDialog();
+    }
+
+
 
 }
