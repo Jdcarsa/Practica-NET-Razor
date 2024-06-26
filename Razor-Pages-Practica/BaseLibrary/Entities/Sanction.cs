@@ -12,5 +12,6 @@ namespace BaseLibrary.Entities
         public DateTime PunishmentDate { get; set; }
 
         public SactionType? SactionType { get; set; }
+        public int SactionTypeId { get; set; }
     }
 }

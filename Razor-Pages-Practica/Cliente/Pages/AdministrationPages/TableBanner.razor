@@ -6,29 +6,71 @@
             </div>
         </div>
         <div class="col-lg-2" style="cursor:pointer;">
-            <div class="card border-success">
+            <div class="card border-success" @onclick="VacationClicked">
                 <div class="card-header"><i class="bi bi-backpack3 text-success"></i> Vacation</div>
+                <span class="badge bg-sucess fs-6">@Vacations.Count</span>
             </div>
         </div>
-        <div class="col-lg-2" style="cursor:pointer;">
+        <div class="col-lg-2" style="cursor:pointer;" @onclick="OvertimeClicked">
             <div class="card border-danger">
                 <div class="card-header"><i class="bi bi-stopwatch text-danger"></i> Overtime</div>
+                <span class="badge bg-sucess fs-6">@Overtimes.Count</span>
             </div>
         </div>
-        <div class="col-lg-2" style="cursor:pointer;">
+        <div class="col-lg-2" style="cursor:pointer;" @onclick="HealthClicked">
             <div class="card border-warning">
                 <div class="card-header"><i class="bi bi-hospital text-warning"></i> Doctor</div>
+                <span class="badge bg-sucess fs-6">@Health.Count</span>
             </div>
         </div>
-        <div class="col-lg-2" style="cursor:pointer;">
+        <div class="col-lg-2" style="cursor:pointer;" @onclick="SanctionClicked">
             <div class="card border-info">
                 <div class="card-header"><i class="bi bi-x-octagon text-info"></i> Sanctions</div>
+                <span class="badge bg-sucess fs-6">@Sanctions.Count</span>
             </div>
         </div>
         <div class="col-lg-2" style="cursor:pointer;">
             <div class="card border-dark">
-                <div class="card-header"><i class="bi bi-building text-info"></i>Departments</div>
+                <div class="card-header"><i class="bi bi-slack text-info"></i>Departments</div>
+                <span class="badge bg-sucess fs-6">@Departments.Count</span>
             </div>
         </div>
     </div>
 </div>
+
+
+@code {
+    public List<Employee> Employees { get; set; } = new();
+    public List<Department> Departments { get; set; } = new();
+    public List<Overtime> Overtimes { get; set; } = new();
+    public List<Sanction> Sanctions { get; set; } = new();
+    public List<Vacation> Vacations { get; set; } = new();
+    public List<Doctor> Health { get; set; } = new();
+
+    protected async override Task OnInitializedAsync()
+    {
+        allState.Action += StateHasChanged;
+        await LoadDefaults();
+    }
+
+    async Task LoadDefaults()
+    {
+        Employees = await employeeService.GetAll(Constants.EmployeeBaseUrl);
+        Departments = await departmentService.GetAll(Constants.DepartmentBaseUrl);
+        Overtimes = await overtimeService.GetAll(Constants.OvertimeBaseUrl);
+        Sanctions = await sanctionService.GetAll(Constants.SanctionBaseUrl);
+        Vacations = await vacationService.GetAll(Constants.VacationBaseUrl);
+        Health = await doctorService.GetAll(Constants.DoctorBaseUrl);
+    }
+
+    void HealthClicked() => allState.HealthClick();
+    void OvertimeClicked() => allState.OvertimeClick();
+    void SanctionClicked() => allState.SanctionClick();
+    void VacationClicked() => allState.VacationClick();
+
+
+    public void Dispose()
+    {
+        allState.Action -= StateHasChanged;
+    }
+}

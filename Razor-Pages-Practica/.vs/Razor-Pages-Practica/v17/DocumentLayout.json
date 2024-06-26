@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\applicationstates\\allstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\applicationstates\\allstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\otherspages\\vacationpages\\vacationtypepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\otherspages\\vacationpages\\vacationtypepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\employeepages\\employeepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\contentpages\\employeepages\\employeepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\contentpages\\homepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\contentpages\\homepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\pages\\administrationpages\\tablebanner.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\pages\\administrationpages\\tablebanner.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|c:\\users\\ideapad330s\\documents\\github\\practica-net-razor\\razor-pages-practica\\cliente\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD9F3C3-50F2-44FB-9916-6833B156EC9A}|Cliente\\Cliente.csproj|solutionrelative:cliente\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -95,51 +91,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VacationTypePage.razor",
-              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\OthersPages\\VacationPages\\VacationTypePage.razor",
-              "RelativeDocumentMoniker": "Cliente\\Pages\\OthersPages\\VacationPages\\VacationTypePage.razor",
-              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\OthersPages\\VacationPages\\VacationTypePage.razor",
-              "RelativeToolTip": "Cliente\\Pages\\OthersPages\\VacationPages\\VacationTypePage.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Title": "TableBanner.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\AdministrationPages\\TableBanner.razor",
+              "RelativeDocumentMoniker": "Cliente\\Pages\\AdministrationPages\\TableBanner.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\AdministrationPages\\TableBanner.razor",
+              "RelativeToolTip": "Cliente\\Pages\\AdministrationPages\\TableBanner.razor",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-26T02:44:01.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomePage.razor",
-              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\HomePage.razor",
-              "RelativeDocumentMoniker": "Cliente\\Pages\\ContentPages\\HomePage.razor",
-              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\HomePage.razor",
-              "RelativeToolTip": "Cliente\\Pages\\ContentPages\\HomePage.razor",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-25T23:58:18.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AllState.cs",
-              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\ApplicationStates\\AllState.cs",
-              "RelativeDocumentMoniker": "Cliente\\ApplicationStates\\AllState.cs",
-              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\ApplicationStates\\AllState.cs",
-              "RelativeToolTip": "Cliente\\ApplicationStates\\AllState.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAiwIsAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T23:43:29.479Z",
+              "WhenOpened": "2024-06-26T20:03:07.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Cliente\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Cliente\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAACEAAAAAAAAAAAAqwCcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T19:54:01.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "EmployeePage.razor",
               "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeePage.razor",
               "RelativeDocumentMoniker": "Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeePage.razor",
               "ToolTip": "C:\\Users\\ideapad330S\\Documents\\GitHub\\Practica-NET-Razor\\Razor-Pages-Practica\\Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeePage.razor",
               "RelativeToolTip": "Cliente\\Pages\\ContentPages\\EmployeePages\\EmployeePage.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAAAHkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-24T17:05:56.532Z",
               "EditorCaption": ""

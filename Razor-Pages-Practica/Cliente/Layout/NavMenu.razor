@@ -1,5 +1,5 @@
 ﻿@page "/nav"
-
+@attribute [Authorize]
 
 
 <AuthorizeView>
@@ -43,7 +43,7 @@
                             <span>Manage</span>
                         </div>
                     </NavLink>
-                    <div class="nav-link p-2 text-white" style="margin-left:3 rem; visibility:@DepartmentCssStyle">
+                    <div class="nav-link p-2 text-white" style="margin-left:2rem; visibility:@DepartmentCssStyle">
                         <ul class="list-group">
                             <li style="list-style:none">
                                 <a class="nav-link p-2" style="cursor:pointer;" @onclick="GeneralDepartmentClicked">
@@ -107,6 +107,34 @@
                                     </div>
                                 </a>
                             </li>
+                            <li style="list-style:none">
+                                <hr />
+                            </li>
+                            <li style="list-style: none">
+                                <a class="nav-link p-2 cursorStyle" @onclick="OvertimeTypeClicked">
+                                    <div class="hstack">
+                                        <span class="bi bi-stopwatch fs-5 text-center" aria-hidden="true" style="margin-top: -2rem;"></span>
+                                        <span>Overtime Type</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="list-style: none">
+                                <a class="nav-link p-2 cursorStyle" @onclick="SanctionTypeClicked">
+                                    <div class="hstack">
+                                        <span class="bi bi-x-octagon fs-5 text-center" aria-hidden="true" style="margin-top: -2rem;"></span>
+                                        <span>Sanction Type</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="list-style: none">
+                                <a class="nav-link p-2 cursorStyle" @onclick="VacationTypeClicked">
+                                    <div class="hstack">
+                                        <span class="bi bi-backpack fs-5 text-center" aria-hidden="true" style="margin-top: -2rem;"></span>
+                                        <span>Vacation Type</span>
+                                    </div>
+                                </a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -200,4 +228,10 @@
     {
         allState.UserClick();
     }
+
+
+    void VacationTypeClicked() => allState.VacationTypeClick();
+    void OvertimeTypeClicked() => allState.OvertimeTypeClick();
+    void SanctionTypeClicked() => allState.SanctionTypeClick();
+
 }

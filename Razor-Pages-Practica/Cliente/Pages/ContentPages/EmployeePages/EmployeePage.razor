@@ -112,6 +112,10 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
         allState.Action += StateHasChanged;
         await LoadEmployees();
         await LoadDefaults();
+        await GetOvertimeTypes();
+        await GetSanctionTypes();
+        await GetVacationTypes();
+
 
     }
 
@@ -223,8 +227,18 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
         contextMenu.CloseContextMenu();
         ShowDetailsPage = true;
         ShowMainPage = false;
-        SelectedEmployee = null;
+        SelectedEmployee = new();
     }
+
+    private async Task GetOvertimeTypes() =>
+    OvertimeTypes = await overtimeTypeService.GetAll(Constants.OvertimeTypeBaseUrl);
+
+    private async Task GetSanctionTypes() =>
+        SanctionTypes = await sanctionTypeService.GetAll(Constants.SanctionTypeBaseUrl);
+
+    private async Task GetVacationTypes() =>
+        VacationTypes = await vacationTypeService.GetAll(Constants.VacationTypeBaseUrl);
+
 
     async Task HandleSaveEmployeeClickedEvent(Employee employee)
     {
