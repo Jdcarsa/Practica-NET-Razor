@@ -87,6 +87,7 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
 <DoctorDialog @ref="doctorDialog" Doctor="Doctor" HandleSaveOperationEvent="SaveHealthEvent"/>
 <OvertimeDialog @ref="overtimeDialog" ItemModel="Overtime" OvertimeTypes="OvertimeTypes" HandleSaveOperationEvent="SaveOvertimeEvent" />
 <SanctionDialog @ref="sanctionDialog" ItemModel="Sanction" SanctionTypes="SanctionsTypes" HandleSaveOperationEvent="SaveSactionEvent" />
+<VacationDialog @ref="vacationDialog" ItemModel="Vacation" SanctionTypes="VacationTypes" HandleSaveOperationEvent="SaveVacationEvent" />
 @code {
     AddOrUpdatePage? addOrUpdateEmployee;
     public Employee Employee { get; set; } = new();
@@ -334,7 +335,7 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
     }
 
     // Save
-    async Task SaveSanctionEvent(Sanction item)
+    async Task SaveSactionEvent(Sanction item)
     {
         item.EmployeeId = SelectedEmployee.Id;
         var (flag, message) = await sanctionService.Insert(item, Constants.SanctionBaseUrl);
@@ -352,12 +353,27 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
 
     VacationDialog? vacationDialog;
     Vacation Vacation = new();
+    List<VacationType> VacationTypes = [];
     private void AddVacationClicked()
     {
         Vacation.EmployeeId = SelectedEmployee.Id;
         contextMenu.CloseContextMenu();
         vacationDialog!.OpenDialog();
     }
+
+    async Task SaveVacationEvent(Vacation item)
+    {
+        item.EmployeeId = SelectedEmployee.Id;
+        var (flag, message) = await vacationService.Insert(item, Constants.VacationBaseUrl);
+        var response = await DisplayMessage(flag, message);
+        if (response)
+        {
+            SelectedEmployee = new();
+            Vacation = new();
+            vacationDialog!.CloseDialog();
+        }
+    }
+
 
 
 

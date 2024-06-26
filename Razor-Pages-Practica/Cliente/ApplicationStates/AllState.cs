@@ -107,7 +107,23 @@
             ShowSanction = true;
             Action?.Invoke();
         }
-        
+
+        public bool ShowVacationType { get; set; }
+        public void VacationTypeClick()
+        {
+            ResetAllDepartments();
+            ShowVacationType = true;
+            Action?.Invoke();
+        }
+
+        public bool ShowVacation { get; set; }
+        public void VacationClick()
+        {
+            ResetAllDepartments();
+            ShowVacation = true;
+            Action?.Invoke();
+        }
+
 
         private void ResetAllDepartments()
         {
@@ -120,6 +136,8 @@
 			ShowUser = false;
 			ShowEmployee = false;
 
+            ShowVacationType = false;
+            ShowVacation = false;
             ShowHealth = false;
 			ShowOvertimeType = false;
             ShowOvertime = false;
