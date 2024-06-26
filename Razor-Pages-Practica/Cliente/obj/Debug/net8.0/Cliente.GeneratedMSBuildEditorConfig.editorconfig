@@ -142,12 +142,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcT3ZlcnRpbWVQYWdlc1xPdmVydGltZURpYWxvZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/OvertimePages/OvertimePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcT3ZlcnRpbWVQYWdlc1xPdmVydGltZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/OvertimePages/OvertimeTypeDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcT3ZlcnRpbWVQYWdlc1xPdmVydGltZVR5cGVEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/OvertimePages/OvertimeTypePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcT3ZlcnRpbWVQYWdlc1xPdmVydGltZVR5cGVQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/ProfileDropDown.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcUHJvZmlsZURyb3BEb3duLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/SanctionPages/SanctionDialog.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcU2FuY3Rpb25QYWdlc1xTYW5jdGlvbkRpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/SanctionPages/SanctionPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcU2FuY3Rpb25QYWdlc1xTYW5jdGlvblBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/SanctionPages/SanctionTypeDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcU2FuY3Rpb25QYWdlc1xTYW5jdGlvblR5cGVEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/SanctionPages/SanctionTypePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzUGFnZXNcU2FuY3Rpb25QYWdlc1xTYW5jdGlvblR5cGVQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ideapad330S/Documents/GitHub/Practica-NET-Razor/Razor-Pages-Practica/Cliente/Pages/OthersPages/VacationPages/VacationDialog.razor]

@@ -85,7 +85,8 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
     HandleAddVacationClicked="AddVacationClicked" />
 
 <DoctorDialog @ref="doctorDialog" Doctor="Doctor" HandleSaveOperationEvent="SaveHealthEvent"/>
-
+<OvertimeDialog @ref="overtimeDialog" ItemModel="Overtime" OvertimeTypes="OvertimeTypes" HandleSaveOperationEvent="SaveOvertimeEvent" />
+<SanctionDialog @ref="sanctionDialog" ItemModel="Sanction" SanctionTypes="SanctionsTypes" HandleSaveOperationEvent="SaveSactionEvent" />
 @code {
     AddOrUpdatePage? addOrUpdateEmployee;
     public Employee Employee { get; set; } = new();
@@ -308,14 +309,46 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
         overtimeDialog!.OpenDialog();
     }
 
+    async Task SaveOvertimeEvent(Overtime item)
+    {
+        item.EmployeeId = SelectedEmployee.Id;
+        var (flag, message) = await overtimeService.Insert(item, Constants.OvertimeBaseUrl);
+        var response = await DisplayMessage(flag, message);
+        if (response)
+        {
+            SelectedEmployee = new();
+            Overtime = new();
+            overtimeDialog!.CloseDialog();
+        }
+    }
+
+
     SanctionDialog? sanctionDialog;
     Sanction Sanction = new();
+    List<SactionType> SanctionsTypes = [];
     private void AddSanctionClicked()
     {
         Sanction.EmployeeId = SelectedEmployee.Id;
         contextMenu!.CloseContextMenu();
         sanctionDialog!.OpenDialog();
     }
+
+    // Save
+    async Task SaveSanctionEvent(Sanction item)
+    {
+        item.EmployeeId = SelectedEmployee.Id;
+        var (flag, message) = await sanctionService.Insert(item, Constants.SanctionBaseUrl);
+        var response = await DisplayMessage(flag, message);
+        if (response)
+        {
+            SelectedEmployee = new();
+            Sanction = new();
+            sanctionDialog!.CloseDialog();
+        }
+    }
+
+
+
 
     VacationDialog? vacationDialog;
     Vacation Vacation = new();

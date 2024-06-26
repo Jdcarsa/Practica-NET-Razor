@@ -75,6 +75,40 @@
             Action?.Invoke();
         }
 
+        public bool ShowOvertimeType { get; set; }
+        public void OvertimeTypeClick()
+        {
+            ResetAllDepartments();
+            ShowOvertimeType = true;
+            Action?.Invoke();
+        }
+
+        public bool ShowOvertime { get; set; }
+        public void OvertimeClick()
+        {
+            ResetAllDepartments();
+            ShowOvertime = true;
+            Action?.Invoke();
+        }
+
+        public bool ShowSanctionType { get; set; }
+        public void SanctionTypeClick()
+        {
+            ResetAllDepartments();
+            ShowSanctionType = true;
+            Action?.Invoke();
+        }
+
+
+        public bool ShowSanction { get; set; }
+        public void SanctionClick()
+        {
+            ResetAllDepartments();
+            ShowSanction = true;
+            Action?.Invoke();
+        }
+        
+
         private void ResetAllDepartments()
         {
             ShowGeneralDepartment = false;
@@ -85,7 +119,12 @@
 			ShowTown = false;
 			ShowUser = false;
 			ShowEmployee = false;
+
             ShowHealth = false;
+			ShowOvertimeType = false;
+            ShowOvertime = false;
+			ShowSanctionType = false;
+            ShowSanction = false;
         }
     }
 
