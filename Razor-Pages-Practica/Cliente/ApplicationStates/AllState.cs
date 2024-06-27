@@ -11,61 +11,61 @@
             Action?.Invoke();
         }
 
-		public bool ShowDepartment { get; set; }
-		public void DepartmentClick()
-		{
-			ResetAllDepartments();
-			ShowDepartment = true;
-			Action?.Invoke();
-		}
+        public bool ShowDepartment { get; set; }
+        public void DepartmentClick()
+        {
+            ResetAllDepartments();
+            ShowDepartment = true;
+            Action?.Invoke();
+        }
 
-		public bool ShowBranch { get; set; }
-		public void BranchClick()
-		{
-			ResetAllDepartments();
-			ShowBranch = true;
-			Action?.Invoke();
-		}
+        public bool ShowBranch { get; set; }
+        public void BranchClick()
+        {
+            ResetAllDepartments();
+            ShowBranch = true;
+            Action?.Invoke();
+        }
 
-		public bool ShowCountry { get; set; }
-		public void CountryClick()
-		{
-			ResetAllDepartments();
-			ShowCountry = true;
-			Action?.Invoke();
-		}
+        public bool ShowCountry { get; set; }
+        public void CountryClick()
+        {
+            ResetAllDepartments();
+            ShowCountry = true;
+            Action?.Invoke();
+        }
 
-		public bool ShowCity { get; set; }
-		public void CityClick()
-		{
-			ResetAllDepartments();
-			ShowCity = true;
-			Action?.Invoke();
-		}
+        public bool ShowCity { get; set; }
+        public void CityClick()
+        {
+            ResetAllDepartments();
+            ShowCity = true;
+            Action?.Invoke();
+        }
 
-		public bool ShowTown { get; set; }
-		public void TownClick()
-		{
-			ResetAllDepartments();
-			ShowTown = true;
-			Action?.Invoke();
-		}
+        public bool ShowTown { get; set; }
+        public void TownClick()
+        {
+            ResetAllDepartments();
+            ShowTown = true;
+            Action?.Invoke();
+        }
 
-		public bool ShowUser { get; set; }
-		public void UserClick()
-		{
-			ResetAllDepartments();
-			ShowUser = true;
-			Action?.Invoke();
-		}
+        public bool ShowUser { get; set; }
+        public void UserClick()
+        {
+            ResetAllDepartments();
+            ShowUser = true;
+            Action?.Invoke();
+        }
 
-		public bool ShowEmployee { get; set; } = true;
-		public void EmployeeClick()
-		{
-			ResetAllDepartments();
-			ShowEmployee = true;
-			Action?.Invoke();
-		}
+        public bool ShowEmployee { get; set; } = true;
+        public void EmployeeClick()
+        {
+            ResetAllDepartments();
+            ShowEmployee = true;
+            Action?.Invoke();
+        }
 
         public bool ShowHealth { get; set; }
         public void HealthClick()
@@ -128,20 +128,20 @@
         private void ResetAllDepartments()
         {
             ShowGeneralDepartment = false;
-			ShowDepartment = false;
-			ShowBranch = false;
-			ShowCountry = false;
-			ShowCity = false;
-			ShowTown = false;
-			ShowUser = false;
-			ShowEmployee = false;
+            ShowDepartment = false;
+            ShowBranch = false;
+            ShowCountry = false;
+            ShowCity = false;
+            ShowTown = false;
+            ShowUser = false;
+            ShowEmployee = false;
 
             ShowVacationType = false;
             ShowVacation = false;
             ShowHealth = false;
-			ShowOvertimeType = false;
+            ShowOvertimeType = false;
             ShowOvertime = false;
-			ShowSanctionType = false;
+            ShowSanctionType = false;
             ShowSanction = false;
         }
     }
