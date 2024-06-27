@@ -14,7 +14,11 @@
                                 Add Employee</button>
                         </div>
                         <div class="card-body">
-                            <SfGrid DataSource="@Employees">
+                            @{
+                                var Tool = (new List<string>() { "Search", "ExcelExport", "PdfExport", "Print" });
+                            }
+                            <SfGrid DataSource="@Employees" AllowPaging="true" AllowSorting="true" Toolbar=@Tool
+                                    AllowExcelExport="true" @ref="DefaultGrid" AllowPdfExport="true">
                                 <GridColumns>
                                     <GridColumn HeaderText="Employee Image">
                                         <Template>
@@ -87,8 +91,9 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
 <DoctorDialog @ref="doctorDialog" Doctor="Doctor" HandleSaveOperationEvent="SaveHealthEvent"/>
 <OvertimeDialog @ref="overtimeDialog" ItemModel="Overtime" OvertimeTypes="OvertimeTypes" HandleSaveOperationEvent="SaveOvertimeEvent" />
 <SanctionDialog @ref="sanctionDialog" ItemModel="Sanction" SanctionTypes="SanctionsTypes" HandleSaveOperationEvent="SaveSactionEvent" />
-<VacationDialog @ref="vacationDialog" ItemModel="Vacation" SanctionTypes="VacationTypes" HandleSaveOperationEvent="SaveVacationEvent" />
+<VacationDialog @ref="vacationDialog" ItemModel="Vacation" VacationTypes="VacationTypes" HandleSaveOperationEvent="SaveVacationEvent" />
 @code {
+    private SfGrid<Employee>? DefaultGrid;
     AddOrUpdatePage? addOrUpdateEmployee;
     public Employee Employee { get; set; } = new();
     public List<Employee> Employees { get; set; } = [];
@@ -234,7 +239,7 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
     OvertimeTypes = await overtimeTypeService.GetAll(Constants.OvertimeTypeBaseUrl);
 
     private async Task GetSanctionTypes() =>
-        SanctionTypes = await sanctionTypeService.GetAll(Constants.SanctionTypeBaseUrl);
+        SanctionsTypes = await sanctionTypeService.GetAll(Constants.SanctionTypeBaseUrl);
 
     private async Task GetVacationTypes() =>
         VacationTypes = await vacationTypeService.GetAll(Constants.VacationTypeBaseUrl);
@@ -385,6 +390,19 @@ HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
             SelectedEmployee = new();
             Vacation = new();
             vacationDialog!.CloseDialog();
+        }
+    }
+
+    public async Task ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+    {
+        if (args.Item.Text == "Excel Export")
+        {
+            await this.DefaultGrid.ExcelExport();
+        }
+
+        if (args.Item.Text == "PDF Export")
+        {
+            await this.DefaultGrid.PdfExport();
         }
     }
 

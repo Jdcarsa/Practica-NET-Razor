@@ -324,7 +324,7 @@ namespace ServerLibrary.Data.Migrations
                     b.Property<DateTime>("PunishmentDate")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int?>("SactionTypeId")
+                    b.Property<int>("SactionTypeId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("date")
@@ -505,7 +505,9 @@ namespace ServerLibrary.Data.Migrations
                 {
                     b.HasOne("BaseLibrary.Entities.SactionType", "SactionType")
                         .WithMany("Sanctions")
-                        .HasForeignKey("SactionTypeId");
+                        .HasForeignKey("SactionTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("SactionType");
                 });

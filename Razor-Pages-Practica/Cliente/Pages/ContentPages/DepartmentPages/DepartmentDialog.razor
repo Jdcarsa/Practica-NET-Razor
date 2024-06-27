@@ -7,12 +7,12 @@
     <DialogTemplates>
         <Header> @Title Department </Header>
         <Content>
-            <EditForm Model="department" OnSubmit="Save">
+            <EditForm Enhance Model="department" OnSubmit="Save">
                 <div class="card border-success">
                     <div class="card-body">
                         <div class="form-group">
                             <label class="form-label">Id</Label>
-                            <Input @bind="department.Id" class="form-control" />
+                            <input @bind="department.Id" class="form-control" disabled/>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Name</Label>
@@ -22,8 +22,8 @@
                             <label class="form-label">Select General Department</label>
                             @if (department.generalDepartment != null)
                             {
-                                string selected = department.generalDepartment.Name;
-                                <SfDropDownList TValue="string" TItem="GeneralDepartment" Placeholder="Select" DataSource="generalDepartments">
+                                string selected = department.generalDepartment.Name!;
+                                <SfDropDownList TValue="string" TItem="GeneralDepartment" Placeholder="@selected" DataSource="generalDepartments">
                                     <DropDownListFieldSettings Value = "Id", Text = "Name"></DropDownListFieldSettings>
                                     <DropDownListEvents TValue="string" TItem="GeneralDepartment" ValueChange="OnValueChange"></DropDownListEvents>
                                 </SfDropDownList>
